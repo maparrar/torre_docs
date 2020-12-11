@@ -2,26 +2,27 @@
 
 # INTRODUCTION
 
-This is a Technical Test for torre.co.
+This is a Technical Test for torre.co. By: Miguel Alejandro Parra Romero. maparrar@gmail.com
 
-By: Miguel Alejandro Parra Romero. maparrar@gmail.com
+Working solution: [skillsviewer](https://skillsviewer.surge.sh)
 
+## Repositories
+- Documents (this repository): [https://github.com/maparrar/torre_docs](https://github.com/maparrar/torre_docs)
+- Front: [https://github.com/maparrar/torre_front](https://github.com/maparrar/torre_front)
+- Back (ad-server): [https://github.com/maparrar/torre_back](https://github.com/maparrar/torre_back)
 
 ## Table of Contents
 1. [Planning](#Planning)
-	- [Stage 1](#Stage-1)
-	- [Stage 2](#Stage-2)
-	- [Stage 3](#Stage-3)
 1. [Problem and suggested solution](#Problem-and-suggested-solution)
+1. [Architecture and technologies](#Architecture-and-technologies)
+1. [Development details](#Development-details)
 1. [Time Log](#Time-log)
-
-
 
 
 # Planning
 The project was divided in 3 stages of 24 hours, each stage with 12 hours of effective working time.
 
-## Stage 1:
+## Stage 1 (Planning):
 ### Product tasks:
 - Interviews with people that was looking for jobs and ask about things that they wanted
 - Think about a creative problem and a solution
@@ -29,17 +30,18 @@ The project was divided in 3 stages of 24 hours, each stage with 12 hours of eff
 - Define a basic design
 
 ### Development tasks:
-- Create repositories and branches:
-	- Docs repository
-	- Front repository
-	- ad_server repository
-- Define architecture and the deply server
+- Create repositories and branches
+- Define architecture and the deploy server
 
-## Stage 2:
+## Stage 2 (Versions 1.0 and 2.0):
 - Development of front with basic design
+- Development of the visualisator
 - Development of the mock server (ad_server)
 
-
+## Stage 3 (Version 3.0 and 4.0):
+- Development of graphical controls
+- Development of skills simulator
+- Final deployment
 
 # Problem and proposed solution
 
@@ -55,7 +57,26 @@ The candidate can look for the available jobs and view graphically and intuitive
 - color: type of job: freelance-gigs, full-time-employment, ...
 
 
-### Data flow:
+# Architecture and technologies
+
+## Front
+- React.js
+- Redux
+- Redux-persist
+- Axios
+- Deployed to [Surge](https://surge.sh)
+
+## Back (ad-server)
+- NodeJs
+- Express
+- MongoDB
+- Deployed to [Heroku](https://heroku.com)
+
+## Back (torre.co)
+- API user (skills)
+- API jobs 
+
+## Data flow:
 ```
   __________	                                         __________
  |          |-----------[current_and_future_skills]---->|          |
@@ -70,38 +91,39 @@ The candidate can look for the available jobs and view graphically and intuitive
 ```
 
 
+# Development details
 
+## Versions
 
+### 1.0: 
+- Load my Genome with Current Skills and Want to Develop Skills from torre.co 
+- Load the available jobs from torre.co and the skills required 
+- Load from learn_server (mock server) the acedemies to improve the desired skills
+- Basic styling
 
+### 2.0: 
+- Show my skills, jobs and desired skills graphically
 
+### 3.0: 
+- Graphical controls
+- Improve styling
 
-==================================================================================================
-VERSIONS:
-
-Version 1.0: 
-	- Load my Genome with Current Skills and Want to Develop Skills from torre.co 
-	- Load the available jobs from torre.co and the skills required 
-	- Load from learn_server (mock server) the acedemies to improve the desired skills
-	- Basic styling
-
-Version 2.0: 
-	- Show my skills, jobs and desired skills graphically
-
-Version 3.0: 
-	- Graphical controls
-	- Improve styling
-
-Version 4.0.
-	- 
-
-
-
-VERSION 1.0 
-Load my Genoma with Current Skills and Want to Develop Skills from torre.co
-	- 
-Load the available jobs from torre.co and the skills required 
-Load from learn_server (mock server) the acedemies to improve the desired skills
-
+### 4.0.
+- Skills simulator
 
 
 # Time Log
+
+## Stage 1 (day 1)
+- [2h] Project planning
+- [1h] Interviews with people that was looking for jobs and ask about things that they wanted
+- [1h] Define and calculate viability, feasibility and scope for the solution
+- [1h] Define a basic design
+- [2h] Create repositories and branches:
+	- Docs repository
+	- Front repository
+	- ad_server repository
+- [2h] Define architecture, technologies and the deploy server
+- [3h] Write base documentation
+
+## Stage 2 (day 2)
