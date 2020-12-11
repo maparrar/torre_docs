@@ -3,11 +3,15 @@
 # INTRODUCTION
 
 This is a Technical Test for torre.co.
+
 By: Miguel Alejandro Parra Romero. maparrar@gmail.com
 
 
 ## Table of Contents
-1. [Example](#example)
+1. [Planning](#Planning)
+	- [Stage 1](#Stage-1)
+	- [Stage 2](#Stage-2)
+	- [Stage 3](#Stage-3)
 2. [Example2](#example2)
 3. [Third Example](#third-example)
 4. [Fourth Example](#fourth-examplehttpwwwfourthexamplecom)
@@ -15,7 +19,30 @@ By: Miguel Alejandro Parra Romero. maparrar@gmail.com
 
 
 
-## Example
+# Planning
+The project was divided in 3 stages of 24 hours, each stage with 12 hours of effective working time
+
+## Stage 1:
+### Product tasks:
+- Interviews with people that was looking for jobs and ask about things that they wanted
+- Think about a creative problem and a solution
+- Decide viability, feasibility and scope for the solution
+- Define a basic design
+
+### Development tasks:
+- Create repositories and branches:
+	- Docs repository
+	- Front repository
+	- ad_server repository
+- Define architecture and the deply server
+
+## Stage 2:
+- Development of front with basic design
+- Development of the mock server (ad_server)
+
+
+
+
 ## Example2
 ## Third Example
 ## [Fourth Example](http://www.fourthexample.com) 
@@ -77,22 +104,3 @@ Load from learn_server (mock server) the acedemies to improve the desired skills
 
 
 
-The project was divided in 3 stages of 24 hours, each stage with 12 hours of effective working time
-
-## Stage 1:
-### Product tasks:
-- Interviews with people that was looking for jobs and ask about things that they wanted
-- Think about a creative problem and a solution
-- Decide viability, feasibility and scope for the solution
-- Define a basic design
-
-### Development tasks:
-- Create repositories and branches:
-	- Docs repository
-	- Front repository
-	- ad_server repository
-- Define architecture and the deply server
-
-## Stage 2:
-- Development of front with basic design
-- Development of the mock server (ad_server)
