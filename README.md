@@ -12,7 +12,7 @@ By: Miguel Alejandro Parra Romero. maparrar@gmail.com
 	- [Stage 1](#Stage-1)
 	- [Stage 2](#Stage-2)
 	- [Stage 3](#Stage-3)
-2. [Example2](#example2)
+2. [Problem and suggested solution](#Problem-and-suggested-solution)
 3. [Third Example](#third-example)
 4. [Fourth Example](#fourth-examplehttpwwwfourthexamplecom)
 
@@ -20,7 +20,7 @@ By: Miguel Alejandro Parra Romero. maparrar@gmail.com
 
 
 # Planning
-The project was divided in 3 stages of 24 hours, each stage with 12 hours of effective working time
+The project was divided in 3 stages of 24 hours, each stage with 12 hours of effective working time.
 
 ## Stage 1:
 ### Product tasks:
@@ -43,29 +43,22 @@ The project was divided in 3 stages of 24 hours, each stage with 12 hours of eff
 
 
 
-## Example2
-## Third Example
-## [Fourth Example](http://www.fourthexample.com) 
+# Problem and suggested solution
 
-
-
-
-Problem: 
-	Sometimes there isn't an easy way to know the job that people want to apply for several reasons: 
-	- there is not an standard for the jobs names between countries, or even companies 
-	- intersection between abilities for jobs: software developer, web developer, front end 
-	  developer, needs algorithm skills 
-	- people are amazingly unique, with skills that usually are not consider for jobs, and could be
-	  really useful for some companies 
+## Problem: 
+Sometimes there isn't an easy way to know the job that people want to apply for several reasons: 
+- there is not an standard for the jobs names between countries, or even companies 
+- intersection between abilities for jobs: software developer, web developer, front end developer, needs algorithm skills 
+- people are amazingly unique, with skills that usually are not consider for jobs, and could be really useful for some companies, ie:
 	- a Social Worker with abilities in logistics => environmental consultation 
-  	- a Developer with abilities in electronics => software developer in electronics company
+	- a Developer with abilities in electronics => software developer in electronics company
 
-Proposed solution: 
+## Proposed solution: 
 	Visualization system to find jobs or careers that are aligned with current abilities or 
 	abilities to learn in the future
 
-Data flow:
-
+### Data flow:
+```
   __________	                                         __________
  |          |-----------[current_and_future_skills]---->|          |
  | torre.co |                                           |          |
@@ -76,8 +69,15 @@ Data flow:
 |learn_server|-------[academies_related_with_skills]--->|__________|
 |____________|
 
+```
 
-===================================================================================================
+
+
+
+
+
+
+==================================================================================================
 VERSIONS:
 
 Version 1.0: 
