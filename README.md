@@ -12,9 +12,8 @@ By: Miguel Alejandro Parra Romero. maparrar@gmail.com
 	- [Stage 1](#Stage-1)
 	- [Stage 2](#Stage-2)
 	- [Stage 3](#Stage-3)
-2. [Problem and suggested solution](#Problem-and-suggested-solution)
-3. [Third Example](#third-example)
-4. [Fourth Example](#fourth-examplehttpwwwfourthexamplecom)
+1. [Problem and suggested solution](#Problem-and-suggested-solution)
+1. [Time Log](#Time-log)
 
 
 
@@ -42,20 +41,19 @@ The project was divided in 3 stages of 24 hours, each stage with 12 hours of eff
 
 
 
+# Problem and proposed solution
 
-# Problem and suggested solution
+## Problem:
+Sometimes is difficult for a candidate to know what skills need to be improved to apply for a specific job. Even when she/he can see the list of required skills, is not easy to compare with another jobs' required skills.
 
-## Problem: 
-Sometimes there isn't an easy way to know the job that people want to apply for several reasons: 
-- there is not an standard for the jobs names between countries, or even companies 
-- intersection between abilities for jobs: software developer, web developer, front end developer, needs algorithm skills 
-- people are amazingly unique, with skills that usually are not consider for jobs, and could be really useful for some companies, ie:
-	- a Social Worker with abilities in logistics => environmental consultation 
-	- a Developer with abilities in electronics => software developer in electronics company
+## Proposed solution:
+**skills viewer**: visualisation system to find the skills that need to be improved for a job and 'advertisement' of academies where can be studied them.
 
-## Proposed solution: 
-	Visualization system to find jobs or careers that are aligned with current abilities or 
-	abilities to learn in the future
+The candidate can look for the available jobs and view graphically and intuitively which of these jobs are 'near' to his/her current skills. The criteria are:
+- distance: near means the candidate doesn't need so much skills to be 'good' candidate for that job. Far means need improve more skills
+- size: big means a big compensation
+- color: type of job: freelance-gigs, full-time-employment, ...
+
 
 ### Data flow:
 ```
@@ -93,10 +91,12 @@ Version 3.0:
 	- Graphical controls
 	- Improve styling
 
+Version 4.0.
+	- 
 
 
 
-									VERSION 1.0 
+VERSION 1.0 
 Load my Genoma with Current Skills and Want to Develop Skills from torre.co
 	- 
 Load the available jobs from torre.co and the skills required 
@@ -104,3 +104,4 @@ Load from learn_server (mock server) the acedemies to improve the desired skills
 
 
 
+# Time Log
