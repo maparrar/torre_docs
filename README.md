@@ -2,9 +2,10 @@
 
 # INTRODUCTION
 
-This is a Technical Test for torre.co. By: Miguel Alejandro Parra Romero. maparrar@gmail.com
+This is a Technical test for torre.co. By: Miguel Alejandro Parra Romero. maparrar@gmail.com
 
-Working solution: [skillsviewer](https://skillsviewer.surge.sh)
+Stage: [skillsviewer-dev](https://skillsviewer-dev.herokuapp.com/)
+Production: [skillsviewer](https://skillsviewer.herokuapp.com/)
 
 ## Repositories
 - Documents (this repository): [https://github.com/maparrar/torre_docs](https://github.com/maparrar/torre_docs)
@@ -13,10 +14,11 @@ Working solution: [skillsviewer](https://skillsviewer.surge.sh)
 
 ## Table of Contents
 1. [Planning](#Planning)
-1. [Problem and suggested solution](#Problem-and-suggested-solution)
+1. [Problem and proposed solution](#Problem-and-proposed-solution)
 1. [Architecture and technologies](#Architecture-and-technologies)
 1. [Development details](#Development-details)
 1. [Time Log](#Time-log)
+1. [Future work](#Future-work)
 
 
 # Planning
@@ -127,3 +129,15 @@ The candidate can look for the available jobs and view graphically and intuitive
 - [3h] Write base documentation
 
 ## Stage 2 (day 2)
+- [1h] Initialize React project and start Front end development
+- [5h] Cors server creation to avoid Cors restrictions
+-  
+
+
+# Future work
+
+This is just and aproximation to a visualisation tool and can be improve in many ways:
+- Standarize skills required by Opportunities and the selectable strengths by candidates
+- Unify strengths and retun them with ids by candidate
+- Improve the visualisation
+- ...
