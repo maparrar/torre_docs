@@ -2,15 +2,28 @@
 
 # INTRODUCTION
 
-This is a Technical test for torre.co. By: Miguel Alejandro Parra Romero. maparrar@gmail.com
+This is a Technical test for torre.co. By: Miguel Alejandro Parra Romero. maparrar@gmail.com. 
 
-Stage: [skillsviewer-dev](https://skillsviewer-dev.herokuapp.com/)
-Production: [skillsviewer](https://skillsviewer.herokuapp.com/)
+Tool for compare jobs' skills required with the strengths of a torre.co user. (mobile, web).
+
+This tool works better with users that have strenghts registered in torre.co. As example, you can use:
+- maparrar (my username)
+- torrenegra
+- larpa
+- kc
+- georgecarretto
+
+The working apps are in the links:
+- Stage: [skillsviewer-dev](https://skillsviewer-dev.herokuapp.com/)
+- Production: [skillsviewer](https://skillsviewer.herokuapp.com/)
+
+Note: Can be delays in the app because these are free servers. Also the CORS-restrictions-avoid-server can add millseconds to the response.
+
 
 ## Repositories
+The repositories are public, but I can change the visibility to private if required.
 - Documents (this repository): [https://github.com/maparrar/torre_docs](https://github.com/maparrar/torre_docs)
-- Front: [https://github.com/maparrar/torre_front](https://github.com/maparrar/torre_front)
-- Back (ad-server): [https://github.com/maparrar/torre_back](https://github.com/maparrar/torre_back)
+- App: [https://github.com/maparrar/torre_front](https://github.com/maparrar/torre_front)
 
 ## Table of Contents
 1. [Planning](#Planning)
@@ -22,7 +35,7 @@ Production: [skillsviewer](https://skillsviewer.herokuapp.com/)
 
 
 # Planning
-The project was divided in 3 stages of 24 hours, each stage with 12 hours of effective working time.
+The project was divided in 3 stages of 24 hours, each stage with 10 hours of effective working time.
 
 ## Stage 1 (Planning):
 ### Product tasks:
@@ -38,7 +51,6 @@ The project was divided in 3 stages of 24 hours, each stage with 12 hours of eff
 ## Stage 2 (Versions 1.0 and 2.0):
 - Development of front with basic design
 - Development of the visualisator
-- Development of the mock server (ad_server)
 
 ## Stage 3 (Version 3.0 and 4.0):
 - Development of graphical controls
@@ -51,12 +63,11 @@ The project was divided in 3 stages of 24 hours, each stage with 12 hours of eff
 Sometimes is difficult for a candidate to know what skills need to be improved to apply for a specific job. Even when she/he can see the list of required skills, is not easy to compare with another jobs' required skills.
 
 ## Proposed solution:
-**skills viewer**: visualisation system to find the skills that need to be improved for a job and 'advertisement' of academies where can be studied them.
+**skills viewer**: visualisation system to find the skills that need to be improved for a job.
 
 The candidate can look for the available jobs and view graphically and intuitively which of these jobs are 'near' to his/her current skills. The criteria are:
 - distance: near means the candidate doesn't need so much skills to be 'good' candidate for that job. Far means need improve more skills
 - size: big means a big compensation
-- color: type of job: freelance-gigs, full-time-employment, ...
 
 
 # Architecture and technologies
@@ -64,15 +75,8 @@ The candidate can look for the available jobs and view graphically and intuitive
 ## Front
 - React.js
 - Redux
-- Redux-persist
 - Axios
-- Deployed to [Surge](https://surge.sh)
-
-## Back (ad-server)
-- NodeJs
-- Express
-- MongoDB
-- Deployed to [Heroku](https://heroku.com)
+- Deployed to [skillsviewer](https://skillsviewer.herokuapp.com/)
 
 ## Back (torre.co)
 - API user (skills)
@@ -82,13 +86,9 @@ The candidate can look for the available jobs and view graphically and intuitive
 ```
   __________	                                         __________
  |          |-----------[current_and_future_skills]---->|          |
- | torre.co |                                           |          |
+ | torre.co |                                           |  Client  |
  |__________|----------------[available_jobs]---------->|          |
-                                                        |  Client  |
- ____________                                           |          |
-|            |                                          |          |
-|learn_server|-------[academies_related_with_skills]--->|__________|
-|____________|
+                                                        |__________|
 
 ```
 
@@ -98,13 +98,12 @@ The candidate can look for the available jobs and view graphically and intuitive
 ## Versions
 
 ### 1.0: 
-- Load my Genome with Current Skills and Want to Develop Skills from torre.co 
+- Load my Genome with Current stregths from torre.co 
 - Load the available jobs from torre.co and the skills required 
-- Load from learn_server (mock server) the acedemies to improve the desired skills
 - Basic styling
 
 ### 2.0: 
-- Show my skills, jobs and desired skills graphically
+- Show my stregths and jobs' skills
 
 ### 3.0: 
 - Graphical controls
@@ -126,18 +125,23 @@ The candidate can look for the available jobs and view graphically and intuitive
 	- Front repository
 	- ad_server repository
 - [2h] Define architecture, technologies and the deploy server
-- [3h] Write base documentation
+- [1h] Write base documentation
 
 ## Stage 2 (day 2)
 - [1h] Initialize React project and start Front end development
-- [5h] Cors server creation to avoid Cors restrictions
--  
+- [7h] Cors server creation to avoid Cors restrictions
+- [3h] Tests with graphical library
+
+## Stage 3 (day 3)
+- [4h] Create functions to transform input data to graphical data
+- [6h] Create the visualisation tool
+- [2h] Final styling and minor improvements
+
 
 
 # Future work
 
 This is just and aproximation to a visualisation tool and can be improve in many ways:
 - Standarize skills required by Opportunities and the selectable strengths by candidates
-- Unify strengths and retun them with ids by candidate
-- Improve the visualisation
-- ...
+- This tool uses 200 jobs for testing puposes, but the graphical system supports thousands of nodes, so can be used with the available jobs
+-  
